@@ -109,15 +109,20 @@ In the last example, computergame and vehicle are the subclasses of toy.
  
  2.10
  
- 
-    def sort():
-        for i in range(1,len(toys)):
-            itemtobeinserted=toy[i]
-            c=i-1
-            while itemtobeinserted.price<toy[c].price and c>0:
-                toy[c+1]=toy[c]
-                c-=1
-            toy[c+1]=itemtobeinserted
+ def bubbleSortToys(arr):
+
+    for i in range(len(arr)):
+
+        for j in range(len(arr) - i - 1):
+
+            if arr[j].getPrice() > arr[j + 1].getPrice():
+
+                temp = arr[j]
+
+                arr[j] = arr[j + 1]
+
+                arr[j + 1] = temp
+
 
 
 
