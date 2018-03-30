@@ -5,6 +5,7 @@ Task3
 character(bob). character(David). character(habib). character(Michael). 
 character_type(bob,prince). character_type(David,princess). character_type(habib,explorer). character_type(Michael,king). 
 3.2
+
 has_skill(X,Y):- character(X), skill(Y).
 
 haspet(X,Y):- character(X), animal(Y).
